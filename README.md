@@ -16,19 +16,19 @@ Installation
 Clone the repository:
 
 bash
-git clone https://github.com/Pujan%12/Todo-react.git
+`git clone https://github.com/Pujan512/Todo-react.git`
 Navigate to the project directory:
 
 bash
-cd simple-todo-app
+`cd simple-todo-app`
 Install the dependencies:
 
 bash
-npm install
+`npm install`
 
 Usage
 Start the development server:
 
 bash
-npm run dev
+`npm run dev`
 Click on the link while holding ctrl key to use the app.
