@@ -3,7 +3,6 @@
     --black: #252525;
     --white: #F7F7F7;
     --red: #F32013;
-    --green: #198754;
 }
 *{margin:0; box-sizing: border-box;font-family: 'kanit',sans-serif;color: var(--white);}
 
@@ -13,7 +12,7 @@ header{
 }
 
 body{
-    margin-top: 2rem;
+    margin: 1rem 1rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,9 +33,8 @@ input[type='text']{
 }
 
 .handle-todo-container{
-    width: 60vw;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
     gap: 16px;
 }
 
@@ -61,10 +59,6 @@ button:hover{
     background-color: var(--red);
 }
 
-.green{
-    background-color: var(--green);
-}
-
 .not-found{
     margin: 30px;
     place-items: center;
@@ -76,15 +70,15 @@ main{
 
 footer{
     text-align: center;
-    width: 60vw;
+    width: 100%;
 }
 
 .todo-container{
     margin-top: 1rem;
+    padding: 0 5rem;
     place-self: center;
     display: grid;
-    width: 55vw;
-    padding: 0 50px;
+    width: 100%;
 }
 
 .todo:last-of-type + hr{
@@ -94,9 +88,15 @@ footer{
 .todo{
     margin: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    gap:2rem;
     align-items: center;
     font-size: 1.5rem;
+}
+
+span{
+    flex-grow: 1;
+    max-width: 37vw;
+    word-break:break-all;
 }
 
 input[type='checkbox']{
@@ -117,4 +117,19 @@ hr{
 .icon:hover{
     background-color: #666666;
     cursor: pointer;
+}
+
+@media (max-width: 640px ) {
+    .todo-container{
+        padding: 0;
+    }
+
+    span{
+        max-width: 50vw;
+        overflow: scroll;
+    }
+
+    .edit{
+        width: 50vw;
+    }
 }

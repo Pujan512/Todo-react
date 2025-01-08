@@ -14,7 +14,7 @@ export default function Todo({ index,
         {editing || <input type="checkbox" checked={isChecked} onChange={() => handleCheckbox(index)} />}
         {
             editing ?
-                <input className="input" type="text" ref={el=>updateRefs.current[index] = el} onKeyDown={e=>{if(e.key === "Enter") handleSubmit(index)}} /> :
+                <input className="edit" type="text" ref={el=>updateRefs.current[index] = el} onKeyDown={e=>{if(e.key === "Enter") handleSubmit(index)}} /> :
                 <span style={{ textDecoration: isChecked ? "line-through" : "none",flexGrow:1 }}>{name}</span>
         }
 

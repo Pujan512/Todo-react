@@ -66,7 +66,6 @@ export default function Body() {
         setTodos([])
         localStorage.removeItem("todos")
         titleRef.current.value = ""
-        titleRef.current.focus()
     }
 
     useEffect(() => {
