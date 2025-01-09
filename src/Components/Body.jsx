@@ -94,8 +94,7 @@ export default function Body() {
             </div> :
             <div className="todo-container">
                 {todos.map((todo, index) => {
-                    return <>
-                        <Todo
+                    return <Todo
                             key={index}
                             index={index}
                             isChecked={todo.isChecked}
@@ -107,8 +106,6 @@ export default function Body() {
                             handleSubmit={handleSubmit}
                             updateRefs={updateRefs}
                         />
-                        <hr />
-                    </>
                 })}
             </div>}
         </main>

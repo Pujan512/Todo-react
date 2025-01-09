@@ -81,7 +81,7 @@ footer{
     width: 100%;
 }
 
-.todo:last-of-type + hr{
+hr:last-of-type{
     display: none;
 }
 
@@ -126,7 +126,6 @@ hr{
 
     span{
         max-width: 50vw;
-        overflow: scroll;
     }
 
     .edit{
